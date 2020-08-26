@@ -1,0 +1,64 @@
+
+PROJECT DESCRIPTION:
+
+The development of an IMAP web-mail client for Codeigniter framework.
+Supporting the following:
+	Folders
+	Send in/out
+	Sync folders
+	View HTML format
+	Attachment handling
+	Database logging(mysql)
+
+DETAILS:
+The attached files include a basic template/test Codeigniter project based on our design layout.
+
+This project should conform with our basic layout, colour scheme and style.
+Attention should be given to the conform with Codeigniter and PHP MVC best practices.
+All email related elements/files should be placed in the appropriate email sub folder. E.g. “controllers/email”,”views/email”. 
+
+All created items should be listed and any changes to existing files should also be noted. A text based file must be created for this.
+
+Folder handling should be incorporated in the provided position as per “/views/includes/header.php and “/views/email/maillst.php”.
+Forms/pages/views to be created: (including but not limited to)
+	Primary page|Message list: (control items)
+		Pagination
+		Sorting by Date(default), Sender etc....
+		Message preview at bottom
+		Buttons for standard email functions(new/compose, reply, forward, delete etc..)
+		Button to associate/save email to mysql. (See note1 below for details) 
+	Message view page:
+		Buttons for standard email functions(reply, forward, delete etc..)
+		Button to associate/save email to mysql. (See note1 below for details) 
+		Attachment handling
+	New Message form/page:
+		Message Text control functions(Size, colour etc..)
+		Attachment handling
+		Send Button
+	Any other pages/forms and items needed for a basic web-mail client.
+Note1: The database has table named “db_email” to save the following:
+	Associated account → dbid 10 digit alpha/numeric field (from user input)
+	From → .frm_name
+	From → .frm_email
+	To → .to_email (local recipient of email)
+	Sent date → .msgdate
+	Subject → .subject
+	Message → .msg
+
+Apart from the above the Developer can use his own discretion with regards to the layout and flow.
+
+Database:
+included is the “debtrec.sql” file for creating test database and tables. [debtrec].[em_dbmsg], [debtrec].[em_adres]  and [debtrec].[users] are the primary tables for the email project.
+2 users are included for testing purposes user1@combrinck.co.za and admin1@combrinck.co.za password for both is 'aTest1234@01' included in [debtrec].[users].[smtp] and [debtrec].[users].[imap] is test email server details.
+Any changes/recommendations should please be documented.
+
+Sample images is included for reference purposes.
+
+Although we do not require a NDA we do  request that all information/data be considered confidential.
+
+
+Should you require any other information please contact me.
+
+Regards
+
+Jaco.
